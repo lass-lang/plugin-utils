@@ -6,6 +6,7 @@
  * These utilities handle bundler-agnostic plugin infrastructure:
  * - Virtual path conventions for .lass <-> .css mapping
  * - Import rewriting for isolated execution
+ * - TypeScript configuration detection
  * - Constants shared across all bundler plugins
  *
  * This is separate from:
@@ -15,6 +16,12 @@
 
 import { posix, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+
+// ============================================================================
+// TYPESCRIPT DETECTION
+// ============================================================================
+
+export { detectTsconfig } from './detect-tsconfig.js';
 
 // ============================================================================
 // CONSTANTS

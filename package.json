@@ -1,6 +1,6 @@
 {
   "name": "@lass-lang/plugin-utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared utilities for Lass bundler plugins",
   "author": "Long-lazuli",
   "type": "module",
